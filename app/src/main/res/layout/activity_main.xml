@@ -6,6 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="20dp"
+        android:background="#000000"
         tools:context=".MainActivity">
 
     <TextView
@@ -14,8 +15,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="@id/et1"
-            tools:text="글자 입력 : "
-            android:id="@+id/tv1"/>
+            android:textColor="#ffffff"
+            android:id="@+id/tv1"
+            android:text="글자 입력 : "/>
 
     <EditText
             android:layout_width="wrap_content"
@@ -23,8 +25,10 @@
             app:layout_constraintStart_toEndOf="@id/tv1"
             app:layout_constraintTop_toTopOf="parent"
             android:inputType="text"
+            android:textColor="#ffffff"
             style="@android:style/Widget.DeviceDefault.EditText"
-            android:ems="8"
+            android:ems="6"
+            android:maxEms="6"
             android:id="@+id/et1"/>
 
     <Button
@@ -32,16 +36,17 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/et1"
             app:layout_constraintStart_toStartOf="parent"
-            tools:text="생성"
-            android:id="@+id/btn1"/>
+            android:textColor="#ffffff"
+            android:background="#303030"
+            android:id="@+id/btn1"
+            android:text="생성"/>
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/btn1"
             app:layout_constraintStart_toStartOf="parent"
-            tools:text="원하는 글자를 입력 후 생성 버튼을 누르세요.\n기본 저장 경로는 내부 저장소의 DCIM/Bonobono 입니다"
+            android:textColor="#ffffff"
             android:id="@+id/tv2"
-            />
-
+            android:text="원하는 글자를 입력 후 생성 버튼을 누르세요.\n기본 저장 경로는 내부 저장소의 DCIM/Bonobono 입니다.\n사진 저장을 위해 저장공간 권한을 사용합니다."/>
 </android.support.constraint.ConstraintLayout>
