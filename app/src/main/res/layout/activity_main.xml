@@ -28,7 +28,7 @@
             android:textColor="#ffffff"
             style="@android:style/Widget.DeviceDefault.EditText"
             android:ems="6"
-            android:maxEms="6"
+            android:maxLength="6"
             android:id="@+id/et1"/>
 
     <Button
